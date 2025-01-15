@@ -1,0 +1,101 @@
+.hero {
+    position: relative;
+    z-index: 2;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url("backgroundHero.png")center / cover no-repeat ;
+    
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9); /* semi-transparent gray */
+    z-index: 1; /* Make sure it stays behind the content */
+  }
+  
+  .hero-image {
+    flex: 1; /* Takes up 50% of the width */
+    max-width: 50%; /* Optional: Limits the image width to 50% */
+    z-index: 2;
+    margin-top: 60px;
+    margin-left: 70px;
+  }
+
+  .hero-image img {
+    margin-left: 30px;
+    width: 90%;
+    height: auto; /* Ensures image maintains aspect ratio */
+    border-radius: 10px;
+  }
+  
+  .hero-text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 430;
+    height: 100%;
+    max-width: 50%; /* Optional: Limits the text section width to 50% */
+    margin-top: 40px;
+    
+  }
+
+ .heroh1 {
+ font-weight: 600;
+  }
+
+  .heroh2{
+    font-size: small;
+  }
+  
+  .hero-h1h2 {
+    color: white;
+    z-index: 2;
+  }
+
+  .hero-h1h2 span {
+    display: block;
+    line-height: 1.9;
+    
+  }
+  
+  .hero-p {
+    color: white;
+    font-size: small;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .hero-p:first-of-type {
+    margin-top: 10px;
+  }
+  
+  .hero-p:last-of-type {
+    bottom: 20px; /* Keep the second paragraph at the bottom */
+  }
+  .quote-link{
+    margin-top: 50px;
+    align-self: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    padding: 25px 30px;
+    text-align: center;
+    font-size: medium;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 0.6s ease, 
+    color 0.6s ease; /* Smooth transitions with longer duration */
+    z-index: 2;
+  }
+  .quote-link:hover {
+    background-color: #D01110; 
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
