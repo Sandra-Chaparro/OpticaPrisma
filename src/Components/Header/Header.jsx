@@ -28,18 +28,19 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
     <header>
       <Disclosure as="nav" className="header" aria-label="Main navigation" >
 
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-           <div className="relative flex h-16 items-center justify-center"> {/*-------------------this is hamburger div */}
-
-              {/* Mobile menu button*/}
-            <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-            <a href="/" className="flex shrink-0 items-center logo-container">
+        <div className="max-w-7xl sm:hidden">
+           <div className="relative flex h-16 ">{/* -------------------this is hamburger div */}
+            {/* logo on mobile */}
+           <a href="/" className="flex shrink-0 left-0 logo-container">
                   <img 
                     alt="imagen del logo de optica"
                     src="/Images/logotest.png"
                     className="h-16 w-auto rounded-2xl border-gray-300 shadow"
                   />
                 </a>
+              {/* Mobile menu button*/}
+            <div className="ml-auto  flex items-center sm:hidden">
+           
               <DisclosureButton 
                 className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="sr-only">Open main menu</span>
@@ -53,18 +54,15 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
                   />
                 </DisclosureButton>
             </div>
-
-         
           </div>
-        </div>
 
-          {/* Mobile Menu */}
+               {/* Mobile Menu */}
           <DisclosurePanel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-2 ">
               {navigation.map((item) => (
                 <DisclosureButton key={item.name} as={NavLink} to={item.to}
                   className={classNames(
-                  "block rounded-md px-3 py-2 text-base font-medium",
+                  "block rounded-md px-3 py-2 text-base font-medium ",
                   item.current
                     ? "bg-gray-900 text-white"
                     : "text-black hover:bg-gray-700 hover:text-white"
@@ -76,12 +74,15 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
               ))}
             </div>
           </DisclosurePanel>
+        </div>
+
+     
 
           
                 {/* Desktop mode */}
         <div className="hidden sm:ml-6 sm:block">
        
-          <div className="flex space-x-16">
+          <div className="flex space-x-14 sm:mx-auto">
           <a href="/" className="flex shrink-0 items-center logo-container ">
                   <img 
                     alt="imagen del logo de optica"
@@ -102,7 +103,7 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
                       setHoverTimeout(setTimeout(() => setOpenDropdown(false), 150));  // Close the dropdown after a delay
                     }}
                 >
-                  <button className="text-gray-300 hover:bg-white hover:text-black rounded-md px-3 py-2 text-lg font-medium"
+                  <button className="text-gray-300 hover:bg-white hover:text-black rounded-md  py-6 text-lg font-medium"
                   >
                     {item.name}
                   </button>
@@ -135,8 +136,8 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
                 className={classNames(
                   item.current
                       ? "bg-white text-black "
-                      : "text-gray-300 hover:bg-white hover:text-black whitespace-nowrap",
-                      "rounded-md px-3 py-2 text-lg font-medium"
+                      : "text-gray-300 hover:bg-white hover:text-black whitespace-nowrap ",
+                      "rounded-md  py-6 text-lg font-medium"
                 )}
                 >
                   {item.name}
