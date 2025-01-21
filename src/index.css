@@ -14,15 +14,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  margin: 0; /* Default: no auto-centering on mobile */
-  width: 100%; /* Full width on mobile */
-}
-
-@media (min-width: 600px) { /* Tablet and above */
+@media (min-width: 1024px) {
   .container {
-    width: 1200px; /* Fixed width for desktop */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 0; /* Remove extra padding for larger screens */
+    margin: 0; /* Default: no auto-centering on mobile */
+    width: 100%; /* Full width on mobile */
   }
 }
+

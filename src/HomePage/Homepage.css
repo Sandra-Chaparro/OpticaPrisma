@@ -25,3 +25,10 @@
 .content {
   flex-grow: 1;
 }
+section {
+  position: relative; /* Contain absolutely positioned child elements */
+  width: 100%; /* Ensure sections span the full width */
+  overflow: hidden; /* Prevent overflow of elements outside the section */
+  padding: 20px; /* Add some padding for spacing */
+  box-sizing: border-box; /* Ensure padding is included in total width/height */
+}

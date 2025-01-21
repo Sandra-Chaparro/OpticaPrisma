@@ -1,4 +1,30 @@
-.ServicesSectionContainer{
-    height: 400px;
+.ServicesSectionContainer {
+    position: relative;
+    max-width: 1200px;
+    height: auto;
     background-color: gray;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
 }
+
+.max-w-sm {
+    max-width: 50%;
+    height: 300px; /* Adjust to desired height */
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%; /* Ensures image fills the container width */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and covers the space */
+  }
+
+  

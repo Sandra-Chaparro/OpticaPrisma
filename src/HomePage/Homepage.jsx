@@ -5,13 +5,10 @@ import HeroSection from "./HeroSection/HeroSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import PortfolioSection from "./PortfolioSection/PortfolioSection";
 import ContactUsSection from "./ContactUsSection/ContactUsSection";
-import Layout from "./../Layout";
 
 const Homepage = () => {
 
   return (
-
-  <Layout>
     <main className="homepage">
       <section id="heroSection">
         <HeroSection />  
@@ -26,7 +23,7 @@ const Homepage = () => {
         <ContactUsSection />
       </section>  
     </main>
-    </Layout>
+
   );
 };
 

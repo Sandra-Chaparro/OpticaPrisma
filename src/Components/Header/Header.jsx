@@ -31,18 +31,18 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
         <div className="max-w-7xl sm:hidden">
            <div className="relative flex h-16 ">{/* -------------------this is hamburger div */}
             {/* logo on mobile */}
-           <a href="/" className="flex shrink-0 left-0 logo-container">
+           <a href="/" className="flex shrink-0 px-2 py-1 logo-container">
                   <img 
                     alt="imagen del logo de optica"
                     src="/Images/logotest.png"
-                    className="h-16 w-auto rounded-2xl border-gray-300 shadow"
+                    className="h-14 w-auto rounded-2xl border-gray-300 shadow"
                   />
                 </a>
               {/* Mobile menu button*/}
             <div className="ml-auto  flex items-center sm:hidden">
            
               <DisclosureButton 
-                className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                className="group relative inline-flex items-center justify-center rounded-md mx-3 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="sr-only">Open main menu</span>
                   <Bars3Icon
                     aria-hidden="true"
