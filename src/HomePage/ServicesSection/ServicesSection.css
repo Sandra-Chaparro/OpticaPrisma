@@ -1,30 +1,66 @@
+@media (max-width: 768px) {
+    
 .ServicesSectionContainer {
     position: relative;
-    max-width: 1200px;
-    height: auto;
     background-color: gray;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
     overflow: hidden;
 }
 
-.max-w-sm {
-    max-width: 50%;
-    height: 300px; /* Adjust to desired height */
-    margin: 0 auto;
-    overflow: hidden;
+.gridContainer{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 10px;
+    scroll-behavior: smooth;
+    overflow-x: auto; /*  enables horizontal scrolling */
+    gap: 10px;
 }
 
-img {
-    width: 100%; /* Ensures image fills the container width */
-    height: 200px; /* Fixed height for the image */
-    object-fit: cover; /* Ensures the image maintains its aspect ratio and covers the space */
+.gridContainer::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+.servicesGridCard{
+    flex: 0 0 auto; /* Prevents shrinking and allows horizontal scrolling */
+    width: 170px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.serviceCardImg {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
   }
 
+  .service-card-text{
+    text-align: center;
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+  }
   
+  .left-btn {
+    left: 10px;
+  }
+  
+  .right-btn {
+    right: 10px;
+  }
+
+
+  
+}
