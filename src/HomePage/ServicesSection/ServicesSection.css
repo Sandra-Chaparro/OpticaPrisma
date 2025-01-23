@@ -2,7 +2,7 @@
     
 .ServicesSectionContainer {
     position: relative;
-    background-color: gray;
+    background-color: #38A3A5;
     overflow: hidden;
 }
 
@@ -42,7 +42,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #007bff;
+    background-color: #D01110;
     color: white;
     border: none;
     border-radius: 50%;
@@ -52,7 +52,7 @@
     cursor: pointer;
     z-index: 10;
   }
-  
+
   .left-btn {
     left: 10px;
   }

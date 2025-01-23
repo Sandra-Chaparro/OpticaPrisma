@@ -1,67 +1,60 @@
 .hero {
   position: relative;
-  z-index: 2;
   display: flex;
-  background: url("backgroundHero.png")center / cover no-repeat ;
+}
+.heroh1Container{
+
 }
 
-.hero-image {
-  z-index: 2;
-}
 .hero-image img{
 border-radius: 10px;
-z-index: 2;
 }
 
 .hero-text {
   display:flex;
-  font-size: 1.7rem;
   font-weight: 430;
   height: 100%;
+  background-color: #EEEEEE 
 }
 
 .heroh1 {
 font-weight: 600;
+display: flex;
+flex-direction: column;
+color: white;
+z-index: 2;
 }
 
 .heroh2{
   font-size: small;
-}
-
-.hero-h1h2 {
-  color: white;
+  color: black;
   z-index: 2;
 }
 
 .hero-h1h2 span {
   display: block;
-  line-height: 1.9;
-  
+  line-height: 1.9; 
 }
 
-.hero-p {
-  color: white;
-  font-size: small;
+.heroContainer{
   z-index: 2;
 }
 
-.hero-buttonContainer{
-z-index: 2;
-}
-
 .quote-link{
-  margin-top: 50px;
+  margin-top: 40px;
   align-self: center;
   background-color: white;
   border-radius: 10px;
   width: 60%;
-  padding: 25px 30px;
+  padding: 10px 30px;
   text-align: center;
+  font-weight: 700;
   font-size: medium;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
   background-color 0.6s ease, 
   color 0.6s ease; /* Smooth transitions with longer duration */
   z-index: 2;
+  border: 2px solid #D01110;
 }
 .quote-link:hover {
   background-color: #D01110; 
@@ -80,92 +73,88 @@ z-index: 2;
   z-index: 1; /* Make sure it stays behind the content */
 }
 
-
 @media (min-width: 1024px) {
-.hero {
+  .hero {
     position: relative;
-    z-index: 2;
-    height: 60vh;
-    width: 100%;
     display: flex;
-    align-items: center;  
+    flex-direction: column;
+    height: 60vh;
+    background: url("storeOffice.jpg")center / cover no-repeat ;
   }
-  
-  .hero-image {
-    flex: 1; /* Takes up 50% of the width */
-    max-width: 50%; /* Optional: Limits the image width to 50% */
-    margin-top: 60px;
-    margin-left: 70px;
+    
+  .heroh1Container{
+    display: flex;
+    flex-direction: column;
+  }
+  .heroh1 {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .heroContainer{
+    display: flex;
+    flex-direction: row;
+    margin:auto;
   }
 
-  .hero-image img {
-    margin-left: 80px;
-    width: 90%;
-    height: auto; /* Ensures image maintains aspect ratio */
-    border-radius: 10px;
+  .leftHeroSection{
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    margin: auto;
   }
-  
+
   .hero-text {
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.7rem;
-    font-weight: 430;
+    flex-direction: column;    
     height: 100%;
-    max-width: 50%; /* Optional: Limits the text section width to 50% */
-    margin-top: 40px;
-    
+    margin: auto;
+    border-radius: 5px;
+    padding: 30px;
   }
+    .heroh2{
+      font-size: medium;
+      text-align: center;
+      font-weight: 600;
+    }
 
- .heroh1 {
- font-weight: 600;
-  }
+    .hero-h1h2 span {
+      display: block;
+      line-height: 1.9;
+   
+    }
+    .rightHeroSection{
+      display:flex;
+      flex-direction: column;
+      max-width: 50%;
+      border-radius: 10px;
+      margin: auto;
+      padding: 60px;
+      z-index: 2;
+      background-color: #EEEEEE;
+    }
 
-  .heroh2{
-    font-size: small;
-  }
-
-  .hero-h1h2 span {
-    display: block;
-    line-height: 1.9;
-  }
-  
-  .hero-p {
-    color: white;
-    font-size: small;
-    justify-content: center;
-    z-index: 2;
-  }
-  
-  .hero-p:first-of-type {
-    margin-top: 10px;
-  }
-  
-  .hero-p:last-of-type {
-    bottom: 20px; /* Keep the second paragraph at the bottom */
-  }
-  .quote-link{
-    margin-top: 50px;
-    align-self: center;
-    border-radius: 10px;
-    width: 60%;
-    padding: 25px 30px;
-    text-align: center;
-    font-size: medium;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 0.6s ease, 
-    color 0.6s ease; /* Smooth transitions with longer duration */
-    z-index: 2;
-  }
-  .quote-link:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
+    .quote-link{
+      align-self: center;
+      border-radius: 10px;
+      width: 60%;
+      padding: 25px 30px;
+      text-align: center;
+      font-size: medium;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+      background-color 0.6s ease, 
+      color 0.6s ease; /* Smooth transitions with longer duration */
+    }
+    .hero-buttonContainer{
+      margin: 40px auto;
+    }
 }
   /* Mobile first approach: max-width 768px */
 @media (max-width: 768px) {
   .hero{
     flex-direction: column;
+    padding-bottom: 15px;
+    background: url("backgroundHero.png")center / cover no-repeat ;
   }
   .heroh1{
     font-size: x-large;
@@ -175,14 +164,12 @@ z-index: 2;
 
   .hero-text{
     flex-direction: row;
-    padding: 20px 5px;
-    background-color: black;
+    padding: 5px 5px;
   }
 
   .heroh2{
     max-width: 40%;
     margin: 40px auto;
-  
     font-size: medium;
     text-align: center;
   }
@@ -191,20 +178,23 @@ z-index: 2;
     max-width: 50%;
     margin-top: 21px;
     margin-right: 10px;
-    z-index: 2;
   }
 
   .map-img img{
     width: 70%;
   }
 
+  .rightHeroSection{
+    background-color:;
+  }
   .hero-image {
-    opacity: 0.8;
-    margin: 10px auto;
+    margin: 15px auto;
     width: 100%;
     }
 
     .hero-buttonContainer{
-      margin: 0 auto;
+      justify-self: center;
+      margin-bottom: 10px;
+      
     }
 }
