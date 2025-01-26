@@ -1,9 +1,23 @@
+.scroll-btn {
+  display: none;
+}
+
 @media (max-width: 768px) {
-    
+  .scroll-btn {
+    display: block; /* Show the arrows */
+  }
+
 .ServicesSectionContainer {
     position: relative;
     background-color: #38A3A5;
     overflow: hidden;
+}
+
+.servicesTitle{
+  font-weight: 600;
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .gridContainer{
@@ -36,6 +50,7 @@
     text-align: center;
     padding: 10px;
     white-space: nowrap;
+    font-weight: 500;
   }
 
   .scroll-btn {
@@ -60,7 +75,45 @@
   .right-btn {
     right: 10px;
   }
+}
 
+@media (min-width: 1024px){
+  .ServicesSectionContainer {
+    position: relative;
+    background-color:  #9ACBD0 /* 47D6B6 #21ABA5 #97CBA9 #38A3A5 */;
+    overflow: hidden;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.servicesTitle{
+  font-weight: 600;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 25px;
+}
+  .gridContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Increase spacing between cards */
+    justify-content: center; /* Center the grid content */
+}
+  .servicesGridCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    width: 250px; /* Increase card width for desktop */
+    border-radius: 15px; /* Adjust border radius */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+}
+.serviceCardImg {
+  height: 200px; /* Increase image height for desktop */
+}
 
-  
+.service-card-text {
+  font-size: 1rem; /* Larger text for better readability */
+  padding: 15px; /* Add more padding */
+  font-weight: 500;
+  text-align: center;
+}
 }

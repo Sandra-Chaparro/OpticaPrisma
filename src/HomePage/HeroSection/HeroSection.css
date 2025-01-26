@@ -2,42 +2,24 @@
   position: relative;
   display: flex;
 }
-.heroh1Container{
-
-}
-
-.hero-image img{
-border-radius: 10px;
-}
-
-.hero-text {
-  display:flex;
-  font-weight: 430;
-  height: 100%;
-  background-color: #EEEEEE 
-}
-
 .heroh1 {
-font-weight: 600;
-display: flex;
-flex-direction: column;
-color: white;
-z-index: 2;
-}
-
-.heroh2{
-  font-size: small;
-  color: black;
+  display: flex;
+  flex-direction: column;
+  color: Black;
   z-index: 2;
-}
-
-.hero-h1h2 span {
-  display: block;
-  line-height: 1.9; 
 }
 
 .heroContainer{
   z-index: 2;
+  width: 100%;
+  margin: 0;
+}
+
+.heroh2{
+  font-size: small;
+  color: white;
+  z-index: 2;
+  font-weight: 400;
 }
 
 .quote-link{
@@ -62,24 +44,26 @@ z-index: 2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.hero::before {
+/* .hero::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9); /* semi-transparent gray */
-  z-index: 1; /* Make sure it stays behind the content */
-}
+  background: rgba(0, 0, 0, 0.9); /* semi-transparent gray 
+ z-index: 1;  Make sure it stays behind the content
+} */
 
 @media (min-width: 1024px) {
   .hero {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 60vh;
-    background: url("storeOffice.jpg")center / cover no-repeat ;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #E5E1DA;
   }
     
   .heroh1Container{
@@ -87,63 +71,81 @@ z-index: 2;
     flex-direction: column;
   }
   .heroh1 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3rem;
     text-align: center;
   }
   .heroContainer{
     display: flex;
     flex-direction: row;
-    margin:auto;
+    height: 100%;
+    width: 100%;
   }
+
+  .rightHeroSection{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .map-img{
+    justify-items: center;
+    margin: 25px;
+  }
+
+  .map-img img{
+    width: 50%;
+    height: 40%; 
+  }
+
+  .heroh2{
+    font-size: large;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+  }
+
+  .hero-h1h2 span {
+    display: block;
+    line-height: 1.9;
+   }
 
   .leftHeroSection{
-    display: flex;
-    flex-direction: row;
-    max-width: 50%;
-    margin: auto;
-  }
-
-  .hero-text {
+    flex: 1;
     display:flex;
-    flex-direction: column;    
-    height: 100%;
-    margin: auto;
-    border-radius: 5px;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    z-index: 2;
   }
-    .heroh2{
-      font-size: medium;
-      text-align: center;
-      font-weight: 600;
-    }
 
-    .hero-h1h2 span {
-      display: block;
-      line-height: 1.9;
-   
-    }
-    .rightHeroSection{
-      display:flex;
-      flex-direction: column;
-      max-width: 50%;
-      border-radius: 10px;
-      margin: auto;
-      padding: 60px;
-      z-index: 2;
-      background-color: #EEEEEE;
-    }
+  .hero-image {
+    width: 100%;
+    height: 100%; /* Match parent height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent image overflow */
+  }
 
-    .quote-link{
-      align-self: center;
-      border-radius: 10px;
-      width: 60%;
-      padding: 25px 30px;
-      text-align: center;
-      font-size: medium;
-      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
-      background-color 0.6s ease, 
-      color 0.6s ease; /* Smooth transitions with longer duration */
+  .hero-image img{
+    width: 100%;
+    height: 100%; /* Force the image to fill its parent */
+    object-fit: cover; /* Ensure the image scales proportionally */
+    margin: 0;
+  }
+  .quote-link{
+    align-self: center;
+    border-radius: 10px;
+    width: 60%;
+    padding: 25px 30px;
+    text-align: center;
+    font-size: medium;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 0.6s ease, 
+    color 0.6s ease; /* Smooth transitions with longer duration */
     }
     .hero-buttonContainer{
       margin: 40px auto;
@@ -154,47 +156,48 @@ z-index: 2;
   .hero{
     flex-direction: column;
     padding-bottom: 15px;
-    background: url("backgroundHero.png")center / cover no-repeat ;
+    background-color: #E5E1DA;
   }
   .heroh1{
-    font-size: x-large;
+    font-size:xx-large;
     text-align: center;
-    margin: 20px ;
+    margin: 10px ;
+    font-weight: 700;
   }
 
-  .hero-text{
+  .rightHero1{
     flex-direction: row;
     padding: 5px 5px;
   }
 
   .heroh2{
     max-width: 40%;
-    margin: 40px auto;
+    margin: 10px auto;
     font-size: medium;
     text-align: center;
+    color: black;
+    font-weight: 550;
   }
   
   .map-img {
     max-width: 50%;
-    margin-top: 21px;
-    margin-right: 10px;
+    margin: auto;
+    justify-items: center;
   }
 
   .map-img img{
     width: 70%;
   }
 
-  .rightHeroSection{
-    background-color:;
-  }
   .hero-image {
-    margin: 15px auto;
+    margin: 0;
     width: 100%;
     }
 
     .hero-buttonContainer{
       justify-self: center;
-      margin-bottom: 10px;
+      margin-top: 25px;
+      margin-bottom: 15px;
       
     }
 }

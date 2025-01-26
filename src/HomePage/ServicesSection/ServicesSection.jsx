@@ -42,6 +42,7 @@ export default function ServicesSection() {
 
   return (
     <section className="ServicesSectionContainer">
+      <h3 className="servicesTitle">Servicios y productos de optometria</h3>
        <button className="scroll-btn left-btn" onClick={() => handleScroll("left")}>←</button>
       <div className='gridContainer' ref={scrollContainer}>
         {services.map((service, index)=>(
