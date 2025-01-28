@@ -13,18 +13,12 @@ const sections = [
     ],
   },
   {
-    title: "Policy",
+    title: "Ubicaciones",
     items: [
-      {name: "Appointment Cancellation Policy", link: "/ApptCancellation"},
-      {name: "Refund Policy", link: "/Refund Policy"},
-    ],
-  },
-  {
-    title: "Company",
-    items: [
-      {name: "About", link: "/about"},
-      {name: "Blog", link: null},
-      {name: "Jobs", link: "/jobs"},
+      "Plaza Juan Rangel",
+      "627 522 60 05",
+      "Pedro de Lille #15 Plaza Prisma",
+      "627 523 63 25",
     ],
   },
 ];
@@ -73,7 +67,7 @@ const Footer = () => {
         ))}
         {/* Fourth Column: Social Media */}
         <div>
-          <h6 className="font-bold uppercase pt-1">Social Media</h6>
+          <h6 className="font-bold uppercase pt-1">Redes Sociales</h6>
           <div className="flex flex-col mt-2 space-y-2">
             {socialMedia.map((item, index) => (
               <a
@@ -95,7 +89,7 @@ const Footer = () => {
 
       {/* Centered footer text */}
       <div className="flex justify-center py-2 text-center text-gray-500">
-        <p>Optica Prisma Parral</p>
+        <p>Optica Prisma Parral, Chihuahua</p>
       </div>
     </div>
   );

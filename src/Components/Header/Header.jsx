@@ -82,7 +82,7 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
                 {/* Desktop mode */}
         <div className="hidden sm:ml-6 sm:block">
        
-          <div className="flex space-x-14 sm:mx-auto">
+          <div className="flex space-x-36 sm:mx-auto">
           <a href="/" className="flex shrink-0 items-center logo-container ">
                   <img 
                     alt="imagen del logo de optica"
@@ -94,7 +94,7 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
               item.isDropdown ?(
                 <div  
                   key={item.name}
-                  className="relative"
+                  className="relative text-gray-300 hover:bg-white hover:text-black rounded-md"
                   onMouseEnter={() => {
                   if (hoverTimeout) clearTimeout(hoverTimeout); // Clear any existing timeout when entering
                       setOpenDropdown(true); // Open the dropdown
@@ -103,7 +103,7 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
                       setHoverTimeout(setTimeout(() => setOpenDropdown(false), 150));  // Close the dropdown after a delay
                     }}
                 >
-                  <button className="text-gray-300 hover:bg-white hover:text-black rounded-md  py-6 text-lg font-medium"
+                  <button className="text-gray-300 hover:bg-white hover:text-black rounded-md py-6 text-lg font-medium md:px-6 hover:px-6"
                   >
                     {item.name}
                   </button>
@@ -136,8 +136,8 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
                 className={classNames(
                   item.current
                       ? "bg-white text-black "
-                      : "text-gray-300 hover:bg-white hover:text-black whitespace-nowrap ",
-                      "rounded-md  py-6 text-lg font-medium"
+                      : "text-gray-300 hover:bg-white hover:text-black whitespace-nowrap inline-block",
+                      "rounded-md  py-6 text-lg font-medium", "md:px-6 hover:px-6"
                 )}
                 >
                   {item.name}

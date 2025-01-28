@@ -5,6 +5,7 @@
 @media (max-width: 768px) {
   .scroll-btn {
     display: block; /* Show the arrows */
+    
   }
 
 .ServicesSectionContainer {
@@ -82,8 +83,10 @@
     position: relative;
     background-color:  #9ACBD0 /* 47D6B6 #21ABA5 #97CBA9 #38A3A5 */;
     overflow: hidden;
+    margin: 0 !important;
     padding-top: 35px;
     padding-bottom: 35px;
+
 }
 .servicesTitle{
   font-weight: 600;
