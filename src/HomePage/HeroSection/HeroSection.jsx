@@ -28,7 +28,7 @@ export default function HeroSection() {
             </h2>  
             <div className='map-img'>
               <img
-                src="/Images/mapImg.png"
+                src="/Images/opticaHero.jpg"
                 alt="A professional web designer working on a website"
                 className="rounded-lg"
               />

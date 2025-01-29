@@ -48,6 +48,8 @@
   }
 
   .service-card-text{
+    background: rgb(229,230,214);
+background: linear-gradient(0deg, rgba(229,230,214,1) 0%, rgba(8,16,22,1) 100%);
     text-align: center;
     padding: 10px;
     white-space: nowrap;
@@ -81,7 +83,7 @@
 @media (min-width: 1024px){
   .ServicesSectionContainer {
     position: relative;
-    background-color:  #9ACBD0 /* 47D6B6 #21ABA5 #97CBA9 #38A3A5 */;
+    background-color:  #2973B2 /* 47D6B6 #21ABA5 #97CBA9 #38A3A5 */;
     overflow: hidden;
     margin: 0 !important;
     padding-top: 35px;
@@ -114,6 +116,8 @@
 }
 
 .service-card-text {
+  background: rgb(236,237,10);
+background: linear-gradient(0deg, rgba(236,237,10,1) 0%, rgba(23,110,176,1) 100%);
   font-size: 1rem; /* Larger text for better readability */
   padding: 15px; /* Add more padding */
   font-weight: 500;

@@ -86,7 +86,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
   }
 
@@ -96,8 +96,8 @@
   }
 
   .map-img img{
-    width: 50%;
-    height: 40%; 
+    width: 45%;
+    height: 5%; 
   }
 
   .heroh2{
@@ -148,7 +148,7 @@
     color 0.6s ease; /* Smooth transitions with longer duration */
     }
     .hero-buttonContainer{
-      margin: 40px auto;
+      margin: 20px auto;
     }
 }
   /* Mobile first approach: max-width 768px */

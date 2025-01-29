@@ -13,12 +13,19 @@ const sections = [
     ],
   },
   {
-    title: "Ubicaciones",
+    title: "Sucursal 1",
     items: [
       "Plaza Juan Rangel",
       "627 522 60 05",
+      "(Subiendo desnivel de AV. Juan Rangel)"
+    ],
+  },
+  {
+    title: "Sucursal 2",
+    items: [
       "Pedro de Lille #15 Plaza Prisma",
       "627 523 63 25",
+      "(Frente a la central camionera)"
     ],
   },
 ];
@@ -48,15 +55,15 @@ const Footer = () => {
             <ul>
             {section.items.map((item, i) =>
                 typeof item === "string" ? (
-                  <li key={i} className="py-.5 text-black">
+                  <li key={i} className="py-.5 text-white">
                     {item}
                   </li>
                 ) : (
                   <li
                     key={i}
-                    className="py-.5 text-gray-500 hover:text-black cursor-pointer"
+                    className="py-.5 text-gray-500 hover:text-white cursor-pointer"
                   >
-                    <a href={item.link} className="hover:text-black">
+                    <a href={item.link} className="hover:text-white">
                       {item.name}
                     </a>
                   </li>
@@ -67,7 +74,7 @@ const Footer = () => {
         ))}
         {/* Fourth Column: Social Media */}
         <div>
-          <h6 className="font-bold uppercase pt-1">Redes Sociales</h6>
+          <h6 className="font-bold uppercase pt-1 ">Redes Sociales</h6>
           <div className="flex flex-col mt-2 space-y-2">
             {socialMedia.map((item, index) => (
               <a
@@ -77,8 +84,8 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-500 hover:text-black"
               >
-                <item.icon className="text-gray-500 text-2xl" />
-                <span className="text-gray-500 hover:text-black">
+                <item.icon className="text-white text-2xl" />
+                <span className="text-white hover:text-white">
                   {item.name}
                 </span>
               </a>
@@ -88,7 +95,7 @@ const Footer = () => {
       </div>
 
       {/* Centered footer text */}
-      <div className="flex justify-center py-2 text-center text-gray-500">
+      <div className="flex justify-center py-2 text-center text-white">
         <p>Optica Prisma Parral, Chihuahua</p>
       </div>
     </div>

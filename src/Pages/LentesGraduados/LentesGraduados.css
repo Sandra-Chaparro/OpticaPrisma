@@ -1,0 +1,50 @@
+.lentesGraduadosContainer{
+display: flex;
+height: 60vh;
+}
+
+.lentesGraduadosTitle{
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 600;
+}
+
+.subtitle{
+    text-align: center;
+    font-weight: 500;
+}
+
+.lentesParaContainer{
+    box-sizing: border-box;
+    flex: 1;
+    width: 50%;
+    margin: auto ;
+}
+
+.lentesGraduadosPara{
+    padding-left: 180px;
+    padding-right: 180px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.lentesImgContainer{
+    box-sizing: border-box;
+    flex: 1;
+    width: 50%;
+    margin: auto;
+}
+.lentesGImg{
+    margin: auto;
+    border-radius: 10px;
+    width: 30%; /* Makes the image fill its container */
+    height: 40%;
+}
+
+.imgLentesGraduados{
+    width: 50%; /* Makes the image fill its container */
+    height: 70%; /* Makes the image fill its container */
+    object-fit: cover;
+    border-radius: 10px;
+}

@@ -22,10 +22,6 @@
   box-shadow: 0 0 8px 8px black inset;
 } */ */
 
-.body{
-  margin: 0 !important;
-}
-
 .content {
   flex-grow: 1;
 }
