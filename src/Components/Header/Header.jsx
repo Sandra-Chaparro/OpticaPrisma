@@ -42,7 +42,7 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
             <div className="ml-auto  flex items-center sm:hidden">
            
               <DisclosureButton 
-                className="group relative inline-flex items-center justify-center rounded-md mx-3 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                className="group relative inline-flex items-center justify-center rounded-md mx-3 p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="sr-only">Open main menu</span>
                   <Bars3Icon
                     aria-hidden="true"
@@ -60,17 +60,47 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
           <DisclosurePanel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2 ">
               {navigation.map((item) => (
-                <DisclosureButton key={item.name} as={NavLink} to={item.to}
+     item.isDropdown ? (
+      <Disclosure key={item.name} as="div" className="border-b border-gray-200">
+        {({ open }) => (
+          <>
+            <DisclosureButton
+              className="w-full flex justify-between items-center rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white"
+            >
+              {item.name}
+              <span>{open ? "▲" : "▼"}</span> {/* Arrow indicator */}
+            </DisclosureButton>
+            <DisclosurePanel className="pl-6">
+              <a href="/lentes-graduados" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
+                Lentes graduados
+              </a>
+              <a href="/lentes-de-contacto" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
+                Lentes de contacto
+              </a>
+              <a href="/lentes-de-sol" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
+                Lentes de sol
+              </a>
+              <a href="/lentes-de-ninos" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
+                Lentes para niños
+              </a>
+            </DisclosurePanel>
+          </>
+        )}
+      </Disclosure>
+    ) : (
+
+               <NavLink key={item.name} as={NavLink} to={item.to}
                   className={classNames(
                   "block rounded-md px-3 py-2 text-base font-medium ",
                   item.current
                     ? "bg-gray-900 text-white"
-                    : "text-black hover:bg-gray-700 hover:text-white"
+                    : "text-white hover:bg-gray-700 hover:text-white"
                   )}
                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
                 >
                   {item.name}
-                </DisclosureButton>
+                  </NavLink>
+                )
               ))}
             </div>
           </DisclosurePanel>
@@ -124,6 +154,11 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
                       href="/lentes-de-sol"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-black">
                         Lentes de sol
+                      </a>
+                      <a 
+                      href="/lentes-de-ninos"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-black">
+                        Lentes para niños
                       </a>
                     </div>
                       )}

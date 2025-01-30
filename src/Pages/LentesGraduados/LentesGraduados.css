@@ -1,6 +1,9 @@
+.lentesImgContainer{
+    display: block;
+}
+
 .lentesGraduadosContainer{
-display: flex;
-height: 60vh;
+    display: flex;
 }
 
 .lentesGraduadosTitle{
@@ -23,17 +26,18 @@ height: 60vh;
 }
 
 .lentesGraduadosPara{
-    padding-left: 180px;
-    padding-right: 180px;
     font-size: 1.2rem;
     font-weight: 500;
+    text-align: justify;
 }
 
 .lentesImgContainer{
     box-sizing: border-box;
+    display: flex;
     flex: 1;
     width: 50%;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 .lentesGImg{
     margin: auto;
@@ -47,4 +51,32 @@ height: 60vh;
     height: 70%; /* Makes the image fill its container */
     object-fit: cover;
     border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    .lentesGraduadosContainer{
+        height: 60vh;
+        }
+        
+    .lentesGraduadosPara{
+        margin-bottom: 15px;
+    }
+    .lentesGraduadosPara{
+        padding-left: 200px;
+        padding-right: 10px;
+
+    }
+}
+@media (max-width: 768px) {
+    .lentesGraduadosContainer{
+        height: 45vh;
+        }
+    .lentesGraduadosPara{
+        font-size: medium;
+        padding-left: 60px;
+        padding-right: 40px;
+    }
+    .lentesImgContainer{
+        display: none;
+        }
 }

@@ -1,0 +1,71 @@
+.lentesContactoContainer{
+    display: flex;
+}
+.lentesContactoTitle{
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 600;
+}
+.textContainerContactLensesPage{
+    display: flex;
+    width: 50%;
+}
+
+.imgContainerContactLensesPage{
+    display: flex;
+    width: 50%;
+    margin: auto ;
+}
+.lentesContactoImg{
+    width: 45%;
+    height: 10%;
+    border-radius: 18px;
+    margin: auto;
+}
+    
+@media (min-width: 1024px) {
+    .lentesContactoContainer{
+    height: 60vh;
+    }
+
+    .textContainerContactLensesPage{
+        margin: auto ;
+    }
+    .lentesContactoPara{
+        padding-left: 150px;
+        padding-right: 100px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .lentesContactoContainer{
+        flex-direction: column;
+        height: 45vh;
+    }
+    .textContainerContactLensesPage{
+        text-align: center;
+        width: 100%;
+        padding-left: 15px;
+        margin-top: 10px;
+        padding-right: 35px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .lentesContactoPara{
+        font-size: medium;
+        text-align: justify;
+    }
+    .imgContainerContactLensesPage{
+     margin-top: 15px;
+    }
+    .lentesContactoImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,72 @@
+.lentesNinosContainer{
+    display: flex;
+}
+.lentesNinosTitle{
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 600;
+}
+.textContainerLentesNinosPage{
+    display: flex;
+    width: 50%;
+}
+
+.imgContainerLentesNinosPage{
+    display: flex;
+    width: 50%;
+    margin: auto ;
+}
+.lentesNinosImg{
+    width: 45%;
+    height: 10%;
+    border-radius: 18px;
+    margin: auto;
+}
+    
+@media (min-width: 1024px) {
+    .lentesNinosContainer{
+    height: 60vh;
+    }
+
+    .textContainerLentesNinosPage{
+        margin: auto ;
+    }
+    .lentesNinosPara{
+        padding-left: 150px;
+        padding-right: 100px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .lentesNinosContainer{
+        flex-direction: column;
+        height: 45vh;
+    }
+    .textContainerLentesNinosPage{
+        text-align: center;
+        width: 100%;
+        padding-left: 15px;
+        margin-top: 10px;
+        padding-right: 35px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .lentesNinosPara{
+        margin: 35px auto;
+        font-size: medium;
+        text-align: justify;
+    }
+    .imgContainerLentesNinosSoPage{
+     margin-top: 15px;
+    }
+    .lentesNinosImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        margin: auto;
+    }
+}
