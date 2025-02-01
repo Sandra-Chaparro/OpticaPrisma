@@ -42,13 +42,13 @@
 .lentesGImg{
     margin: auto;
     border-radius: 10px;
-    width: 30%; /* Makes the image fill its container */
+    width: 30%; 
     height: 40%;
 }
 
 .imgLentesGraduados{
-    width: 50%; /* Makes the image fill its container */
-    height: 70%; /* Makes the image fill its container */
+    width: 50%; 
+    height: 70%; 
     object-fit: cover;
     border-radius: 10px;
 }
