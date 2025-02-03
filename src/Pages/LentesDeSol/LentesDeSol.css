@@ -44,7 +44,7 @@
 @media (max-width: 768px) {
     .lentesSolContainer{
         flex-direction: column;
-        height: 45vh;
+        height: 85vh;
     }
     .textContainerLentesSolPage{
         text-align: center;
