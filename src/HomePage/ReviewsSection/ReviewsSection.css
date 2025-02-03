@@ -4,7 +4,6 @@
     height: 450px;
     font-size: x-large;
     text-align: center;
-
 }
 
 .reviewsStarsImg{
@@ -49,11 +48,15 @@
 }
 
 @media (max-width: 768px) {
+    .ReviewsSection{
+        display: flex;
+        flex-direction: row;    
+    }
     .reviewsContainer{
         gap: 7px;       
        }
     .reviewsCard{
-        height: 370px;   
+        height: 350px;   
     }
     .reviewsStarsImg{
         height: 20px;

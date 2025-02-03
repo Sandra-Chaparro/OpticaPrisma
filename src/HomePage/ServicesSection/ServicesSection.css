@@ -30,7 +30,7 @@
 
 .servicesGridCard{
     flex: 0 0 auto; /* Prevents shrinking and allows horizontal scrolling */
-    width: 170px;
+    width: 150px;
     background: white;
     border-radius: 10px;
     overflow: hidden;
