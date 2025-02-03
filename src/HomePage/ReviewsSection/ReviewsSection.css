@@ -62,7 +62,8 @@
         gap: 1px;    
     }
     .reviewsCard{
-        height: auto;    
+        height: auto;   
+        width: 450px; 
     }
 
     .reviewsStarsImg{
