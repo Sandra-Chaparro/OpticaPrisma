@@ -1,7 +1,8 @@
-.ReviewsSection{
+@media (min-width: 1024px) {
+    .ReviewsSection{
     display: flex;
-    flex-direction: column;
     height: 350px;
+    flex-direction: column;
     font-size: x-large;
     text-align: center;
 }
@@ -46,37 +47,53 @@
     padding-right: 15px;
 }
 
-@media (min-width: 1024px) {
-    .ReviewsSection{
-        height: 350px;
-    }
 }
 
 @media (max-width: 768px) {
     .ReviewsSection{
-        height: 620px;
+        display: flex;
+        height: 350px;
+        flex-direction: column;
+        font-size: x-large;
+        text-align: center;
     }
+    
+    .reviewsStarsImg{
+        margin: auto;
+        height: 40px;
+        width: 140px;
+    }
+    
     .reviewsContainer{
         display: flex;
-        flex-direction: column;
-        gap: 1px;    
+        flex-wrap:nowrap;
+        gap: 30px;
     }
+    
     .reviewsCard{
-        height: auto;   
-        width: 450px; 
+        margin: auto;
+        margin-top: 15px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 7px;
+        width: 450px;
+        height: 250px;
+        font-size: large;
+        text-align: center;
+        padding-top: 15px;
     }
-
-    .reviewsStarsImg{
-        height: 20px;
-        width: 90px;
-    }
+    
     .author{
-        font-size: medium;
+        font-weight: 500;
+        color: black;
+        margin: 10px auto;
     }
     
     .review{
         color: black;
-        font-size: .85rem;
+        font-size: small;
         padding-left: 15px;
         padding-right: 15px;
     }
