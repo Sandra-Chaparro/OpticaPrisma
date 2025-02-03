@@ -13,10 +13,9 @@
 }
 
 .reviewsContainer{
- display: flex;
- flex-wrap:nowrap;
- gap: 30px;
-
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 30px;
 }
 
 .reviewsCard{
@@ -48,16 +47,17 @@
 }
 
 @media (max-width: 768px) {
-    .ReviewsSection{
-        display: flex;
-        flex-direction: row;    
-    }
     .reviewsContainer{
-        gap: 7px;       
+        display: flex;
+        flex-direction: column;
+        gap: 1px;    
+        overflow-y: auto;     
        }
     .reviewsCard{
-        height: 350px;   
+        height: 270px; 
+        
     }
+
     .reviewsStarsImg{
         height: 20px;
         width: 90px;
@@ -68,7 +68,7 @@
     
     .review{
         color: black;
-        font-size: x-small;
+        font-size: .85rem;
         padding-left: 15px;
         padding-right: 15px;
     }
