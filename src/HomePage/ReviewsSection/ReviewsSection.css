@@ -55,7 +55,7 @@
        }
     .reviewsCard{
         height: 270px; 
-        
+        width: auto;
     }
 
     .reviewsStarsImg{
