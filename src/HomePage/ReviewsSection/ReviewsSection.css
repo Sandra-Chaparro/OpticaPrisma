@@ -5,18 +5,19 @@
     flex-direction: column;
     font-size: x-large;
     text-align: center;
-}
+    padding: 0;
+    }
 
-.reviewsStarsImg{
-    margin: auto;
-    height: 40px;
-    width: 140px;
-}
+    .reviewsStarsImg{
+        height: 40px;
+        width: 140px;
+    }
 
 .reviewsContainer{
     display: flex;
     flex-wrap:nowrap;
     gap: 30px;
+    padding: 0;
 }
 
 .reviewsCard{
@@ -56,12 +57,14 @@
         height: 100%;
         font-size: x-large;
         text-align: center;
+
     }
     .reviewsContainer{
         display: flex;
         flex-direction: column;
         flex-wrap:nowrap;
         gap: 2px;
+
     }
     .reviewsStarsImg{
         margin: 0 auto;
