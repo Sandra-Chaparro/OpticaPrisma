@@ -64,7 +64,7 @@
         gap: 2px;
     }
     .reviewsStarsImg{
-        margin: auto;
+        margin: 0 auto;
         height: 20px;
         width: 100px;
     }
@@ -85,7 +85,7 @@
     .author{
         font-weight: 500;
         color: black;
-        margin: 10px auto;
+        margin: 0 auto;
     }
     
     .review{
