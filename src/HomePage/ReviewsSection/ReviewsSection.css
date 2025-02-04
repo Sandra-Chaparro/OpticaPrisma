@@ -52,22 +52,21 @@
 @media (max-width: 768px) {
     .ReviewsSection{
         display: flex;
-        height: 350px;
         flex-direction: column;
+        height: 100%;
         font-size: x-large;
         text-align: center;
     }
-    
-    .reviewsStarsImg{
-        margin: auto;
-        height: 40px;
-        width: 140px;
-    }
-    
     .reviewsContainer{
         display: flex;
+        flex-direction: column;
         flex-wrap:nowrap;
-        gap: 30px;
+        gap: 2px;
+    }
+    .reviewsStarsImg{
+        margin: auto;
+        height: 20px;
+        width: 100px;
     }
     
     .reviewsCard{
@@ -78,9 +77,7 @@
         border-color: black;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
         border-radius: 7px;
-        width: 450px;
-        height: 250px;
-        font-size: large;
+        font-size: medium;
         text-align: center;
         padding-top: 15px;
     }
