@@ -15,17 +15,17 @@ const sections = [
   {
     title: "Sucursal 1",
     items: [
-      "Plaza Juan Rangel",
-      "627 522 60 05",
-      "(Subiendo desnivel de AV. Juan Rangel)"
+      "Pedro de Lille #15 Plaza Prisma",
+      "627 523 63 25",
+      "(Frente a la central camionera)"
     ],
   },
   {
     title: "Sucursal 2",
     items: [
-      "Pedro de Lille #15 Plaza Prisma",
-      "627 523 63 25",
-      "(Frente a la central camionera)"
+      "Plaza Juan Rangel",
+      "627 522 60 05",
+      "(Subiendo desnivel de AV. Juan Rangel)"
     ],
   },
 ];

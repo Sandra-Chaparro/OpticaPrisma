@@ -8,6 +8,8 @@ import LentesGraduados from "./Pages/LentesGraduados/LentesGraduados";
 import LentesContacto from "./Pages/LentesContacto/LentesContacto";
 import LentesDeSol from "./Pages/LentesDeSol/LentesDeSol";
 import LentesDeNinos from "./Pages/LentesDeNinos/LentesDeNinos";
+import ExamenDeVista from "./Pages/ExamenDeVista/ExamenDeVista";
+import Sucursales from "./Pages/Sucursales/Sucursales";
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
         <Route path="/lentes-de-contacto" element={<LentesContacto />}/>
         <Route path="/lentes-de-sol" element={<LentesDeSol />}/>
         <Route path="/lentes-de-ninos" element={<LentesDeNinos />}/>
+        <Route path="/examen-de-la-vista" element={<ExamenDeVista />}/>
+        <Route path="/sucursales" element={<Sucursales />}/>
+
       </Routes>
       
       <Footer />

@@ -16,7 +16,7 @@ const navigation = [
   { name: "Lentes", current: false, isDropdown: true},
   { name: "Examen de la vista", href: "/examen-de-la-vista", current: false },
   { name: "Sucursales", href: "/sucursales", current: false },
-  { name: "FAQ", href: "/faq", current: false },
+  { name: "Contactanos", href: "/contactanos", current: false },
 ];
 
 
@@ -24,7 +24,7 @@ export default function Header() {
  
 const [openDropdown, setOpenDropdown] = useState(false); //to show/hide the dropdown menu when mouse on top 
 const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough time for the user to select from dropdown
-  return (
+return (
     <header>
       <Disclosure as="nav" className="header" aria-label="Main navigation" >
 
@@ -89,7 +89,7 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
       </Disclosure>
     ) : (
 
-               <NavLink key={item.name} as={NavLink} to={item.to}
+               <NavLink key={item.name} as={NavLink} to={item.href}   
                   className={classNames(
                   "block rounded-md px-3 py-2 text-base font-medium ",
                   item.current

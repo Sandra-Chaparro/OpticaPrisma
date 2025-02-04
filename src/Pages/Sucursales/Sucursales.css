@@ -1,0 +1,101 @@
+.SucursalesTitle{
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 600;
+}
+
+.SucursalesContainer{
+    display: flex;
+    text-align: center;
+}
+
+.sucursal1Container{
+    display: flex;
+    flex-direction: column;
+
+}
+    
+.sucursal2Container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sucursalTitle{
+    margin: 25px auto;
+    font-size: x-large;
+    font-weight: 700;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+}
+
+li {
+    display: flex;
+    align-items: center; /* Ensures the icon and text are aligned in the same row */
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.icon {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem; /* Adjust icon size if needed */
+}
+
+
+@media (min-width: 1024px) {
+.SucursalesContainer{
+    height: 60vh;
+}
+
+.sucursalInfo{
+    margin: auto;
+    text-align: justify;
+}
+
+.sucursal1Container{
+    width: 50%;
+}
+    
+.sucursal2Container{
+    width: 50%;
+}
+.suc1Img {
+    margin: auto;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.suc2Img{
+    margin: auto;
+    width: 40%;
+    border-radius: 5px;
+}
+
+}
+
+@media (max-width: 768px) {
+.SucursalesContainer{
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.sucursal1Container .sucursal2Container{
+    width: 100%;
+    margin: auto;
+}
+.suc1Img{
+    margin: auto;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.suc2Img{
+    margin: auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+}
