@@ -5,7 +5,7 @@
     flex-direction: column;
     font-size: x-large;
     text-align: center;
-    padding: 0;
+    font-weight: 600;
     }
 
     .reviewsStarsImg{
@@ -17,7 +17,6 @@
     display: flex;
     flex-wrap:nowrap;
     gap: 30px;
-    padding: 0;
 }
 
 .reviewsCard{
