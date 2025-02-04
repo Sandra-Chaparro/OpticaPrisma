@@ -44,7 +44,7 @@
 @media (max-width: 768px) {
     .lentesContactoContainer{
         flex-direction: column;
-        height: 85vh;
+        height: 100%;
     }
     .textContainerContactLensesPage{
         text-align: center;

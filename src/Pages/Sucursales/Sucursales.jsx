@@ -7,6 +7,7 @@ export default function Contactanos() {
   return (
     <>
     <h1 className='SucursalesTitle'>Contamos con dos sucursales</h1>    
+      
       <div className='SucursalesContainer'>
 
         <div className='sucursal1Container'>

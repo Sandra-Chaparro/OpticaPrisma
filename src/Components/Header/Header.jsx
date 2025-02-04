@@ -16,7 +16,6 @@ const navigation = [
   { name: "Lentes", current: false, isDropdown: true},
   { name: "Examen de la vista", href: "/examen-de-la-vista", current: false },
   { name: "Sucursales", href: "/sucursales", current: false },
-  { name: "Contactanos", href: "/contactanos", current: false },
 ];
 
 

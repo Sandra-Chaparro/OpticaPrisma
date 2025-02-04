@@ -1,6 +1,5 @@
 .SucursalesTitle{
     margin-top: 20px;
-    font-size: xx-large;
     text-align: center;
     font-weight: 600;
 }
@@ -45,6 +44,10 @@ li {
 
 
 @media (min-width: 1024px) {
+    .SucursalesTitle{
+        font-size: xx-large;
+    }
+    
 .SucursalesContainer{
     height: 60vh;
 }
@@ -76,10 +79,12 @@ li {
 }
 
 @media (max-width: 768px) {
+    .SucursalesTitle{
+        font-size: x-large;
+    }
 .SucursalesContainer{
     flex-direction: column;
     height: 100%;
-
 }
 
 .sucursal1Container .sucursal2Container{

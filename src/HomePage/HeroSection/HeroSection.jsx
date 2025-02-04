@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./HeroSection.css"
 
 export default function HeroSection() {
@@ -34,7 +35,8 @@ export default function HeroSection() {
               />
             </div> 
             <div className='hero-buttonContainer'>
-              <a href="/contacto" className="quote-link">Contactanos ahora!</a>
+            <Link to="/sucursales" className="quote-link">Contactanos ahora!</Link>
+              
             </div>
           </div>
 

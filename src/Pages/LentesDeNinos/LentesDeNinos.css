@@ -44,7 +44,7 @@
 @media (max-width: 768px) {
     .lentesNinosContainer{
         flex-direction: column;
-        height: 85vh;
+        height: 100%;
     }
     .textContainerLentesNinosPage{
         text-align: center;
