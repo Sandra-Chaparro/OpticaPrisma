@@ -18,8 +18,9 @@ export default function ReviewsSection() {
   ]
   return (
     <>
-      <section className='ReviewsSection'>Opiniones de nuestros clientes
-       
+      <section className='ReviewsSection'>
+      <h3 className="reviewsTitle">Opiniones de nuestros clientes</h3>
+           
       <div className='reviewsContainer'>
         {reviews.map((review, index) => (
           <div key={index} className='reviewsCard'>

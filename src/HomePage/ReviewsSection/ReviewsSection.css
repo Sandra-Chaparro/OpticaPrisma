@@ -1,3 +1,6 @@
+.reviewsTitle{
+    font-weight: 600;
+}
 @media (min-width: 1024px) {
     .ReviewsSection{
     display: flex;
@@ -12,40 +15,40 @@
         height: 40px;
         width: 140px;
     }
+    
+    .reviewsContainer{
+        display: flex;
+        flex-wrap:nowrap;
+        gap: 30px;
+    }
 
-.reviewsContainer{
-    display: flex;
-    flex-wrap:nowrap;
-    gap: 30px;
-}
+    .reviewsCard{
+        margin: auto;
+        margin-top: 15px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 7px;
+        width: 450px;
+        height: 250px;
+        font-size: large;
+        text-align: center;
+        padding-top: 15px;
+    }
 
-.reviewsCard{
-    margin: auto;
-    margin-top: 15px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 7px;
-    width: 450px;
-    height: 250px;
-    font-size: large;
-    text-align: center;
-    padding-top: 15px;
-}
+    .author{
+        font-weight: 500;
+        color: black;
+        margin: 10px auto;
+    }
 
-.author{
-    font-weight: 500;
-    color: black;
-    margin: 10px auto;
-}
-
-.review{
-    color: black;
-    font-size: small;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+    .review{
+        color: black;
+        font-size: small;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 }
 
