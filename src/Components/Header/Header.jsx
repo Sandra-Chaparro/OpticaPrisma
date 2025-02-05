@@ -3,6 +3,7 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
+  CloseButton
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
@@ -18,7 +19,6 @@ const navigation = [
   { name: "Sucursales", href: "/sucursales", current: false },
 ];
 
-
 export default function Header() {
  
 const [openDropdown, setOpenDropdown] = useState(false); //to show/hide the dropdown menu when mouse on top 
@@ -26,7 +26,7 @@ const [hoverTimeout, setHoverTimeout] = useState(null);//ensures there is enough
 return (
     <header>
       <Disclosure as="nav" className="header" aria-label="Main navigation" >
-
+    
         <div className="max-w-7xl sm:hidden">
            <div className="relative flex h-16 ">{/* -------------------this is hamburger div */}
             {/* logo on mobile */}
@@ -36,10 +36,9 @@ return (
                     src="/Images/logotest.png"
                     className="h-14 w-auto rounded-2xl border-gray-300 shadow"
                   />
-                </a>
+            </a>
               {/* Mobile menu button*/}
-            <div className="ml-auto  flex items-center sm:hidden">
-           
+            <div className="ml-auto flex items-center sm:hidden">
               <DisclosureButton 
                 className="group relative inline-flex items-center justify-center rounded-md mx-3 p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="sr-only">Open main menu</span>
@@ -51,57 +50,69 @@ return (
                     aria-hidden="true"
                     className="hidden h-6 w-6 group-open:block"
                   />
+                  
                 </DisclosureButton>
             </div>
           </div>
 
                {/* Mobile Menu */}
           <DisclosurePanel className="sm:hidden">
+          {({ close }) => (
             <div className="space-y-1 px-2 pb-3 pt-2 ">
               {navigation.map((item) => (
-     item.isDropdown ? (
-      <Disclosure key={item.name} as="div" className="border-b border-gray-200">
-        {({ open }) => (
-          <>
-            <DisclosureButton
-              className="w-full flex justify-between items-center rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white"
-            >
-              {item.name}
-              <span>{open ? "▲" : "▼"}</span> {/* Arrow indicator */}
-            </DisclosureButton>
-            <DisclosurePanel className="pl-6">
-              <a href="/lentes-graduados" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
-                Lentes graduados
-              </a>
-              <a href="/lentes-de-contacto" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
-                Lentes de contacto
-              </a>
-              <a href="/lentes-de-sol" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
-                Lentes de sol
-              </a>
-              <a href="/lentes-de-ninos" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
-                Lentes para niños
-              </a>
-            </DisclosurePanel>
-          </>
-        )}
-      </Disclosure>
-    ) : (
-
-               <NavLink key={item.name} as={NavLink} to={item.href}   
-                  className={classNames(
+              item.isDropdown ? (
+              <Disclosure key={item.name} as="div" className="border-b border-gray-200">
+                {({ open }) => (
+                  <>
+                    <DisclosureButton
+                      className="w-full flex justify-between items-center rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white"
+                    >
+                      {item.name}
+                      <span>{open ? "▲" : "▼"}</span> {/* Arrow indicator */}
+                    </DisclosureButton>
+                    <DisclosurePanel className="pl-6">
+                      <a href="/lentes-graduados" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
+                        Lentes graduados
+                      </a>
+                      <a href="/lentes-de-contacto" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
+                        Lentes de contacto
+                      </a>
+                      <a href="/lentes-de-sol" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
+                        Lentes de sol
+                      </a>
+                      <a href="/lentes-de-ninos" className="block py-2 text-white hover:bg-gray-700 hover:text-white">
+                        Lentes para niños
+                      </a>
+                    </DisclosurePanel>
+                  </>
+                )}
+              </Disclosure>
+              ) : (
+         
+                <CloseButton as="div"  className={classNames(
                   "block rounded-md px-3 py-2 text-base font-medium ",
                   item.current
                     ? "bg-gray-900 text-white"
                     : "text-white hover:bg-gray-700 hover:text-white"
                   )}
+            
                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
+               >
+                                 
+                <NavLink
+                  to={item.href}
+                  aria-current={({ isActive }) => (isActive ? "page" : undefined)}
+                  onClick={() => close()}
                 >
-                  {item.name}
-                  </NavLink>
+                {item.name}
+                </NavLink>
+          
+                </CloseButton>
+
                 )
               ))}
             </div>
+       )}
           </DisclosurePanel>
         </div>
 
