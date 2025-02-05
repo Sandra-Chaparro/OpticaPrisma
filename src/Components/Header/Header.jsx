@@ -89,7 +89,7 @@ return (
               </Disclosure>
               ) : (
          
-                <CloseButton as="div"  className={classNames(
+                <CloseButton as="div" key={item.name} className={classNames(
                   "block rounded-md px-3 py-2 text-base font-medium ",
                   item.current
                     ? "bg-gray-900 text-white"
