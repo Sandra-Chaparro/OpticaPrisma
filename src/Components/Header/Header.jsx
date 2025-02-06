@@ -102,10 +102,10 @@ return (
                 <NavLink
                   to={item.href}
                   aria-current={({ isActive }) => (isActive ? "page" : undefined)}
-                  onClick={() => close()}
+                  onClick={() => close()} key={item.name}
                 >
                 {item.name}
-                key={item.name}
+               
                 </NavLink>
           
                 </CloseButton>
