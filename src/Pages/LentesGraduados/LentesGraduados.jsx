@@ -5,7 +5,7 @@ export default function LentesGraduados() {
   return (
     <div>
     <h1 className='lentesGraduadosTitle'>Lentes Graduados</h1>
-    <p className='subtitle'>Variedad y Estilo para Tu Comodidad</p>
+    <p className='subtitle'>Variedad y Estilo para Tu Comodidad</p><br></br>
     <div className='lentesGraduadosContainer'>
 
         <div className='lentesParaContainer'>

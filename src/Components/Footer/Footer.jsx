@@ -51,11 +51,11 @@ const Footer = () => {
         {/* Added gap-4 */}
         {sections.map((section, index) => (
           <div key={index}>
-            <h6 className="font-bold uppercase pt-1">{section.title}</h6>
+            <h6 className="font-bold uppercase pt-1 text-sm md:text-base" >{section.title}</h6>
             <ul>
             {section.items.map((item, i) =>
                 typeof item === "string" ? (
-                  <li key={i} className="py-.5 text-white">
+                  <li key={i} className="py-.5 text-white text-xs md:text-sm">
                     {item}
                   </li>
                 ) : (
@@ -84,7 +84,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-500 hover:text-black"
               >
-                <item.icon className="text-white text-2xl" />
+                <item.icon className="text-white text-xl" />
                 <span className="text-white hover:text-white">
                   {item.name}
                 </span>

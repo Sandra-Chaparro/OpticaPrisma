@@ -105,6 +105,7 @@ return (
                   onClick={() => close()}
                 >
                 {item.name}
+                key={item.name}
                 </NavLink>
           
                 </CloseButton>
