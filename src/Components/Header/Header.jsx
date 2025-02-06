@@ -87,18 +87,7 @@ return (
                   </>
                 )}
               </Disclosure>
-              ) : (
-         
-                <CloseButton as="div" key={item.name} className={classNames(
-                  "block rounded-md px-3 py-2 text-base font-medium ",
-                  item.current
-                    ? "bg-gray-900 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-white"
-                  )}
-            
-                aria-current={({ isActive }) => (isActive ? "page" : undefined)}
-               >
-                                 
+              ) : (              
                 <NavLink
                   to={item.href}
                   aria-current={({ isActive }) => (isActive ? "page" : undefined)}
@@ -107,8 +96,6 @@ return (
                 {item.name}
                
                 </NavLink>
-          
-                </CloseButton>
 
                 )
               ))}
