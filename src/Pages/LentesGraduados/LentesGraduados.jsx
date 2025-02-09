@@ -12,7 +12,7 @@ export default function LentesGraduados() {
             <p className='lentesGraduadosPara'>
               En nuestra óptica, sabemos que cada persona tiene un estilo único, por eso ofrecemos una amplia gama de armazones para lentes graduados que se adaptan a todas tus necesidades y preferencias. 
               <br></br><br></br>Ya sea que busques un diseño clásico y elegante, un estilo moderno y vanguardista, o algo más deportivo y funcional, tenemos la opción perfecta para ti.
-              Ven y descubre por qué nuestros lentes graduados no solo mejoran tu visión, ¡sino también tu look!</p>
+              Ven y descubre por qué nuestros lentes graduados no solo mejoran tu visión, ¡sino también tu look!</p><br></br>
               <img 
             src ="/Images/lentesGImg.jpg"
             className='lentesGImg'
